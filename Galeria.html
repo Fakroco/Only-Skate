@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilocss.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6b3a474988.js" crossorigin="anonymous"></script>
+    <script type="module" src="mapa.js"></script>
+    <title>Galeria OnlySkate</title>
+</head>
+<header>
+    <a class="btn" href="index.html" style="text-decoration: none;">OnlySkate</a>
+        <br>
+    <div class="container">
+        <a class="boton" href="foro.html"style="text-decoration: none;">Foro Onlyskate</a>
+        <a class="boton" href="mapai.html" style="text-decoration: none;">Ubicacion</a>
+    </div>
+</header>     
+<body>
+    <div class="slider">
+        <ul> 
+            <li><img src="mediapark.jpg" ></li> 
+            <li><img src="mediapark2.jpg"></li>
+            <li><img src="skatepark.jpg"></li>
+            <li><img src="mediapark3.jpg"></li>
+        </ul>
+    </div>       
+    <div class="contenedor1">
+        <img src="skatepark principal.jpg" alt="Mediapark Punta Arenas"> 
+            <div class="section1">
+                 <div class="parrafo">
+                    <h2>Media Park Punta Arenas</h2>
+                    <br>
+                    <p>
+                    Este sitio es uno de los mas conocidos
+                    tanto por la comunidad Skater como las que no pertenecen
+                    a este deporte ya que debido a que esta cerca del centro
+                    de Punta Arenas es muy facil ubicarlo ademas de contar tambien
+                    con una construccion para los amantes de las BMX, Ademas de ser uno
+                    de los lugares mas transcurridos por los Skaters de Punta Arenas 
+                    es conocida como Media Park.
+                    </p>
+                    <br> 
+                        <div class="iconos">
+                            <span>
+                                <i class="fa-solid fa-person-walking fa-2xl"></i>Concurrencia: Frecuentemente visitada
+                                <br><br><br>
+                                <i class="fa-solid fa-compact-disc fa-xl"></i> Suelo: Es bastante agradable y buena calidad 
+                                para patinar
+                                <br><br><br>
+                                <i class="fa-solid fa-location-dot fa-2xl"></i> Ubicacion: Calle Angamos con Av.España
+                            </span>
+                        </div>
+                        <br>
+                        <div id="map"></div> 
+                        <script>
+                            (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+                              key: "AIzaSyAJCmRyCVsczoeOzqrFy09GlwBVDGFPGMM",});
+                        </script>      
+                    </div>
+                </div>
+            </div>    
+        </div> 
+    <div class="contenedor2"> 
+        <img src="costanera.jpg" alt="Mediapark Punta Arenas">  
+            <div class="section2">
+                <div class="parrafo">
+                    <h3>SkatePark Costanera</h3>
+                    <br>
+                    <p>
+                    Este lugar es el segundo mas conocido por la comunidad Skater, ya que hay
+                    implementos en este lugar que permite la realizacion de algunos trucos gracias a sus implementos
+                    son ideales para un nivel poco mas avanzado en el skate, al ser algo complicado debido a sus grietas 
+                    en el suelo lo que puede provocar caidas en caso de no tener las ruedas necesarias, 
+                    con rampas mas dificiles que las del skatepark de angamos, piso medio agrietado,
+                    pero buen lugar para probarse a si mismos y practicar algunos trucos jugando con las rampas.
+                    </p>
+                    <br>
+                    <div class="iconos">
+                        <span>
+                            <i class="fa-solid fa-person-walking fa-2xl"></i>Concurrencia: Frecuentemente visitada
+                            <br><br><br>
+                            <i class="fa-solid fa-compact-disc fa-xl"></i> 
+                            Suelo: Agrietado, se recomienda llevar ruedas duras 
+                            <br><br><br>
+                            <i class="fa-solid fa-location-dot fa-2xl"></i> Ubicacion: Avenida Costanera, Plaza Quinto Centenario
+                        </span>
+                    </div>
+                    <br>
+                    <div id="map2"></div>
+                    <script>
+                        (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+                            key: "AIzaSyAJCmRyCVsczoeOzqrFy09GlwBVDGFPGMM",});
+                    </script>    
+                </div>
+            </div>
+        </div>
+    </div> 
+    <footer>
+        <p1>&copy; 2023 OnlySkate</p1>
+    </footer>                
+</body>
+</html>

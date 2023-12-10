@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlySkate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #FFA833;
+            color: #fff;
+            padding: 1em;
+        }
+
+        .btn {
+      font-family: 'OpenSans';
+      font-style: oblique;
+      background-color: transparent;
+      color: #ffffff;
+      padding: 30px 30px;
+      border: rgb(255, 149, 0);
+      border-radius: 7px;
+      cursor: pointer;
+      font-size: 55px;
+      margin: auto 20px;
+  }
+        section {
+            margin-top: 20px;
+        }
+
+        .post {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .post h2 {
+            margin-bottom: 5px;
+        }
+
+        .post p {
+            margin-bottom: 10px;
+        }
+        .post img {
+            max-width: 60%;
+            height: auto;
+        }
+
+
+        main {
+            padding: 2em;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #FFA833;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a class="btn" href="index.html" style="text-decoration: none;">OnlySkate</a>
+    </header>
+    <section>
+        <div class="post">
+            <h2>50-50 en Rampas de media park</h2>
+            <p>Usuario: Tony Hawk</p>
+            <img src="tony.png" alt="Imagen del primer post">
+            <p>El otro dia pase por media park, ubicada en angamos con av. españa y tuve una sesion de rampas donde pude sacar 5050</p>
+        </div>
+
+        <div class="post">
+            <h2>Trucos para skatepark de costanera</h2>
+            <p>Usuario: Rodney Mullen </p>
+            <img src="rodney.jpg" alt="Imagen del segundo post">
+            <p>El suelo de las canchas de basquet que estan ubicadas al lado del parque de skate estan buenisimas para hacer trucos de suelo</p>
+        </div>
+    </section>
+
+
+    <main>
+        <p>Foro</p>
+        <button onclick="Subirtruco()">Sube tu truco!</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 OnlySkate</p>
+    </footer>
+
+    <script>
+        function Subirtruco() {
+            window.location.href = "upfoto.html";
+        }
+    </script>
+
+</body>
+</html>

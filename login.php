@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlySkate</title>
+    <style>
+       
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #FFA833;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+    .btn {
+      font-family: 'OpenSans';
+      font-style: oblique;
+      background-color: transparent;
+      color: #ffffff;
+      padding: 30px 30px;
+      border: rgb(255, 149, 0);
+      border-radius: 7px;
+      cursor: pointer;
+      font-size: 55px;
+      margin: auto 20px;
+  }
+
+        main {
+            padding: 1em;
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px; 
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #FFA833;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #FFA833;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a class="btn" href="index.html" style="text-decoration: none;">OnlySkate</a>
+    </header>
+
+    <main>
+        <h2>Ingresa a tu cuenta</h2>
+        <form action="" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" >
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" >
+
+            <input name= "btningresar" class="brn" type="submit" value="INICIAR SESION">
+        </form>
+        <?php
+        include("conexion.php");
+        include("loginbd.php");  
+        ?>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 OnlySkate</p>
+    </footer>
+
+</body>
+
+   
+<script>
+</script>
+
+</html>

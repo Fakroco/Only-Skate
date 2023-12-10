@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlySkate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #FFA833;
+            color: #fff;
+            padding: 1em;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #FFA833;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>OnlySkate</h1>
+    </header>
+
+    <main>
+        <p>Te has registrado correctamente! Pulsa el boton de aqui abajo para volver a la pagina principal</p>
+        <button onclick="volverAPaginaPrincipal()">Volver a la página principal</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 OnlySkate</p>
+    </footer>
+
+    <script>
+        function volverAPaginaPrincipal() {
+            // Ponte aki el archivo de la pagina principal chele ""
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+</html>
